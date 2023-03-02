@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Cultupaz-login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/">
+    <script src="https://kit.fontawesome.com/729c569168.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../images/Logo1.png" type="image/x-icon"></head>
+    <style>
+        .contenedor{
+      background: url(../Cultupaz/images/psico.jpg) no-repeat;
+      background-size: cover;
+      justify-content: start;
+      color: white;
+      
+    }
+    #contenedor_form {
+        width: 70%;
+        height: 90%;
+      }  
+    
+      #centrador{
+  position: relative;
+  width: 20vh;
+}
+    </style>
+</head>
+<body class="contenedor d-flex">
+    <div class="container bg-white bg-opacity-75 text-dark mt-5 " id="contenedor_form">
+        <!--formulario-->
+        <form  action="../dashboard/login.html" class="row g-3 d-flex justify-content-center needs-validation"autocomplete="off" novalidate >
+            <div class="aling-items-center" id="centrador">
+                <a class="text-aling-center " href="../index.html"><img src="./img/Logo1.png" alt="Logo_empresa" width="140" height="70" class="d-inline-block "></a>
+            </div>
+            <div>
+                <h5 class="display-6 mt-4 font-weight-bold text-center">Registrate!</h5>
+
+            </div>
+            <div class="row ">
+                <div class="col-sm-12 col-md-6">
+                    <label for="formGroupExampleInput" class="form-label ">Nombres</label>
+                <input type="text" class="form-control text-dark " id="formGroupExampleInput" placeholder="Ingrese Nombres" required> 
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese los nombres
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <label for="formGroupExampleInput" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control text-dark " id="formGroupExampleInput" placeholder=" Ingrese apellidos" required>
+
+                    <div class="valid-feedback">
+
+                        bien hecho!
+                      </div> 
+                      <div class="invalid-feedback ">
+                        Porfavor ingrese los apellidos
+                      </div>
+                </div>
+                    </div>
+
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6">
+                        <label for="tipo" class="form-label">Tipo documento</label>
+                        <select class="form-select  mb-3 p-2" required>
+                    <option selected>Tipo de documento</option>
+                    <option value="CC">CC</option>
+                    <option value="NIT">NIT</option>
+                    <option value="CE">CE</option>
+                         </select>
+                         <div class="valid-feedback">
+
+                            bien hecho!
+                          </div> 
+                          <div class="invalid-feedback ">
+                            Porfavor seleccione el tipo documento
+                          </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="formGroupExampleInput" class="form-label">Numero de Documento</label>
+                <input type="number" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese numero documento" required>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese el numero de documento
+                  </div>
+                </div>
+                    </div>
+                    
+                    <div class="row ">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="tipo" class="form-label">Genero</label>
+                            <select class="form-select  mb-3 p-2" required>
+                        <option selected>Seleccion su Genero </option>
+                        <option value="CC">Masculino</option>
+                        <option value="NIT">Femenino </option>
+                        <option value="CE">Otro</option>
+                        <option value="CE">Prefiero no decirlo</option>
+    
+                             </select>
+                             <div class="valid-feedback">
+    
+                                bien hecho!
+                              </div> 
+                              <div class="invalid-feedback ">
+                                Porfavor seleccione el tipo documento
+                              </div>
+                            </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <label for="formGroupExampleInput" class="form-label">Numero de Ficha</label>
+                            <input type="number" class="form-control me-4 text-dark" id="formGroupExampleInput" placeholder=" Ingrese numero de ficha" required>
+                            <div class="valid-feedback">
+
+                                bien hecho!
+                              </div> 
+                              <div class="invalid-feedback ">
+                                Porfavor ingrese el  numero de ficha
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+
+                        <div class="col-sm-12 col-md-6">
+                            <label for="formGroupExampleInput" class="form-label">Numero celular</label>
+                            <input type="number" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese numero celular" required>
+                            <div class="valid-feedback">
+
+                                bien hecho!
+                              </div> 
+                              <div class="invalid-feedback ">
+                                Porfavor ingrese el numero de celular
+                              </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <label for="formGroupExampleInput" class="form-label">Correo</label>
+                <input type="email" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese correo" required>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese el correo
+                  </div>
+
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="formGroupExampleInput" class="form-label">Contraseña</label>
+                <input type="password" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese Contraseña" required>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese la contraseña
+                  </div>
+
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="formGroupExampleInput" class="form-label">Confirmar contraseña </label>
+                <input type="password" class="form-control text-dark" id="formGroupExampleInput" placeholder="Confirmar contraseña" required>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese la contraseña
+                  </div>
+
+                        </div>
+                    </div>
+                    <a href="../dashboard/login.html" class="font-weight-bold px-4 text-primary">Ya tengo cuenta</a>
+
+              <div class="form-check mx-4">
+
+                <input class="form-check-input mx-2 mb-4 " type="checkbox" value="" id="flexCheckDefault" required>
+                <label class="form-check-label mx-1 " for="flexCheckDefault">
+                  Acepto los terminos y condiciones
+                </label>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor acepte los terminos
+                  </div>
+
+              </div>
+              <div class="d-flex justify-content-center">
+                <input type="submit"  value="Registar" class="btn btn-lg w-75 text-light"style="background-color: #00324D " >
+              </div>
+              <p class="font-weight-bold text-center text-muted mt-4 mb-3 "></p>
+              
+        </form>
+    </div>
+
+    </div>
+    
+<script src="../js/bootstrap.min.js"></script>
+<script src="./js/validation.js"></script>
+
+</script>
+</body>
+</html>
