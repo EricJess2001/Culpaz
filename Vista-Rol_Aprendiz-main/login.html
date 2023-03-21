@@ -42,17 +42,24 @@
         padding: 1em 2em;
         margin-left: 30px;
         margin-top: 20px;
-        border:solid#D1B862;
+        border:solid#0a486a;
         background: #00324D;
         -webkit-transition: background 1.3s, opacity 0.3s;
         transition: background 0.3s, opacity 0.3s;
         " >Regresar</button></a>
       <div class="justify-content-center vh-100">
         <div class="container d-flex justify-content-center">
-          <div
+          <form
+
+          id="formlogin"
+          action="/login"
+          method="POST"
             class="container p-2 mb-2 border border-2-primary my-5 bg-white p-5 rounded text-dark mh-100"
-            style="width: 25rem; height: 37rem"
+            style="width: 25rem; height: 32rem"
           >
+
+
+
             <div class="d-flex justify-content-center align-content-center">
               <img
                 src="./Icons/Icons-Login/Logo-CultuPAz.png"
@@ -80,6 +87,9 @@
                 type="text"
                 class="form-control bg-white"
                 placeholder="Correo electrónico"
+                id="user"
+                name="correo"
+                required
               />
             </div>
 
@@ -95,6 +105,9 @@
                 class="form-control bg-light"
                 type="password"
                 placeholder="Contraseña"
+                id="pass"
+                name="contraseña"
+                required
               />
             </div>
 
@@ -137,25 +150,10 @@
                 class="border-bottom text-center mt-1"
                 style="height: 0.9rem"
               >
-                <span class="bg-white px-3">o</span>
+                <span class="bg-white px-3"></span>
               </div>
             </div>
-            <div
-              class="btn d-flex gap-2 justify-content-center border mt-2 shadow-sm"
-            >
-              <img
-                src="./Icons/Icons-Login/google-icon.svg"
-                alt="google-icon"
-                style="height: 1.8rem"
-              />
-
-              <a
-                href="https://accounts.google.com/v3/signin/identifier?dsh=S50424583%3A1667659400465066&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowEntry=AddSession&flowName=GlifWebSignIn&service=mail"
-                target="_blanck"
-              >
-                <button class="btn text-secondary">Continua con google</button>
-              </a>
-            </div>
+            
           </div>
          
         </div>

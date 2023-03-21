@@ -1353,14 +1353,15 @@ input[type='checkbox'] {
 .basic-3 {
 	position: relative;
 	overflow: hidden;
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	background-color: rgb(62, 79, 89);
 	text-align: center;
 }
 
 .basic-3 .image-container {
 	margin-bottom: 2rem;
+
 }
 
 .basic-3 .p-large {
@@ -2158,8 +2159,8 @@ a:hover.back-to-top {
 
 	/* Download */
 	.basic-3 .image-container {
-		width: 57.8125rem;
-		height: 36.0625rem;
+		width: 30.8125rem;
+		height: 18.0625rem;
 		margin-right: auto;
 		margin-left: auto;
 	}

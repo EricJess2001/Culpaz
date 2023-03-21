@@ -33,7 +33,7 @@
 <body class="contenedor d-flex">
     <div class="container bg-white bg-opacity-75 text-dark mt-5 " id="contenedor_form">
         <!--formulario-->
-        <form  action="../dashboard/login.html" class="row g-3 d-flex justify-content-center needs-validation"autocomplete="off" novalidate >
+        <form  action="../dashboard/login.html" method="post" class="row g-3 d-flex justify-content-center needs-validation"autocomplete="off" novalidate >
             <div class="aling-items-center" id="centrador">
                 <a class="text-aling-center " href="../index.html"><img src="./img/Logo1.png" alt="Logo_empresa" width="140" height="70" class="d-inline-block "></a>
             </div>
@@ -44,7 +44,7 @@
             <div class="row ">
                 <div class="col-sm-12 col-md-6">
                     <label for="formGroupExampleInput" class="form-label ">Nombres</label>
-                <input type="text" class="form-control text-dark " id="formGroupExampleInput" placeholder="Ingrese Nombres" required> 
+                <input type="text" class="form-control text-dark " name="nombres" id="formGroupExampleInput" placeholder="Ingrese Nombres" required> 
                 <div class="valid-feedback">
 
                     bien hecho!
@@ -56,7 +56,7 @@
 
                 <div class="col-sm-12 col-md-6">
                     <label for="formGroupExampleInput" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control text-dark " id="formGroupExampleInput" placeholder=" Ingrese apellidos" required>
+                    <input type="text" class="form-control text-dark " name="apellidos" id="formGroupExampleInput" placeholder=" Ingrese apellidos" required>
 
                     <div class="valid-feedback">
 
@@ -70,7 +70,7 @@
 
                 <div class="row ">
                     <div class="col-sm-12 col-md-6">
-                        <label for="tipo" class="form-label">Tipo documento</label>
+                        <label for="tipo"  class="form-label">Tipo documento</label>
                         <select class="form-select  mb-3 p-2" required>
                     <option selected>Tipo de documento</option>
                     <option value="CC">CC</option>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="formGroupExampleInput" class="form-label">Numero de Documento</label>
-                <input type="number" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese numero documento" required>
+                <input type="number" class="form-control text-dark" name="numeroIdentificacion" id="formGroupExampleInput" placeholder="Ingrese numero documento" required>
                 <div class="valid-feedback">
 
                     bien hecho!
@@ -121,7 +121,7 @@
 
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Numero de Ficha</label>
-                            <input type="number" class="form-control me-4 text-dark" id="formGroupExampleInput" placeholder=" Ingrese numero de ficha" required>
+                            <input type="number" name="numeroFicha" class="form-control me-4 text-dark" id="formGroupExampleInput" placeholder=" Ingrese numero de ficha" required>
                             <div class="valid-feedback">
 
                                 bien hecho!
@@ -135,7 +135,7 @@
 
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Numero celular</label>
-                            <input type="number" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese numero celular" required>
+                            <input type="number" name="telefono" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese numero celular" required>
                             <div class="valid-feedback">
 
                                 bien hecho!
@@ -147,7 +147,7 @@
 
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Correo</label>
-                <input type="email" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese correo" required>
+                <input type="email" class="form-control text-dark" name="correo" id="formGroupExampleInput" placeholder="Ingrese correo" required>
                 <div class="valid-feedback">
 
                     bien hecho!
@@ -159,7 +159,7 @@
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Contraseña</label>
-                <input type="password" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese Contraseña" required>
+                <input type="password" class="form-control text-dark" name="contraseña" id="formGroupExampleInput" placeholder="Ingrese Contraseña" required>
                 <div class="valid-feedback">
 
                     bien hecho!
@@ -171,7 +171,7 @@
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Confirmar contraseña </label>
-                <input type="password" class="form-control text-dark" id="formGroupExampleInput" placeholder="Confirmar contraseña" required>
+                <input type="password" class="form-control text-dark" name="contraseña" id="formGroupExampleInput" placeholder="Confirmar contraseña" required>
                 <div class="valid-feedback">
 
                     bien hecho!
